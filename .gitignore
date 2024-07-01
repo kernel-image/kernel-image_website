@@ -1,0 +1,82 @@
+#ignore following files:
+
+# General
+.DS_Store
+Thumbs.db
+
+# Media
+*.3gp
+*.7z
+*.arw
+*.avi
+*.bmp
+*.cr2
+*.cr3
+*.crw
+*.dcm
+*.djvu
+*.doc
+*.docx
+*.eps
+*.gif
+*.ico
+*.jpeg
+*.jpg
+*.m4a
+*.m4v
+*.mkv
+*.mov
+*.mp3
+*.mp4
+*.mpeg
+*.mpg
+*.nef
+*.odp
+*.ods
+*.odt
+*.oga
+*.ogg
+*.ogv
+*.pdf
+*.png
+*.ppt
+*.pptx
+*.psd
+*.rar
+*.snd
+*.tar
+*.tif
+*.tiff
+*.ttf
+*.txt
+*.wav
+*.webm
+*.woff
+*.woff2
+*.xls
+*.xlsx
+*.xml
+*.zip
+
+#environment variables
+.env
+.env.local
+
+# node
+node_modules/
+
+# npm
+/npm-debug.log*
+/npm-error.log*
+
+# IDE
+.vscode/
+
+# build
+/build/
+/dist/
+/out/
+
+# misc
+/.log
+/logs/
