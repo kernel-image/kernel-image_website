@@ -1,0 +1,97 @@
+{
+    "content": [
+        {
+            "id": "intro",
+            "title": "eureka!",
+            "url": "182824999",
+            "keywords": ["motion"],
+            "description": "You have discovered kernel-image, a provider of experience-stimulating content and interactivity. Similar to the hidden component of a computer operating system, kernel-image works behind the scenes to mediate the flow of information between virtual desires and physical hardware. Feel free to look at the reel above or peruse other projects samples on the site."
+        },
+        {
+            "id": "nogginsABC",
+            "title": "Noggins ABCs",
+            "url": "896279403",
+            "keywords": ["interactive"],
+            "description": "Series of literacy games developed for Paramount's educational platform, noggin, running on iOS and android. Implemented a global system that would adapt difficulty of content baed on performance across the platform, with custom tooling for production automations, including xAPI analytics event dispatching and data QA from around a million users. Lead interactive production from concepting through regression testing. "
+
+        },
+        {
+            "id": "noggins123",
+            "title": "Noggins 123s",
+            "url": "898152161",
+            "keywords": ["interactive"],
+            "description": "Series of math games developed for Paramount's educational platform, noggin, running on iOS and android. Implemented a global system that would adapt difficulty of content baed on performance across the platform, with custom tooling for production automations, including xAPI analytics event dispatching and data QA from around a million users. Lead interactive production from concepting through regression testing."
+        },
+        {
+            "id": "pie2020",
+            "title": "Nickelodeon Interactive 2020",
+            "url": "899525009",
+            "keywords": ["interactive"],
+            "description": "Interactive content developed for mobile supporting Nick Jr IP.  The opener, Block Party: Pattern Quest  was a webby award honeree, while Blues Clues & You received an Emmy nomination for Outstanding Interactive Media."
+        },
+        {
+            "id": "nogginMissions",
+            "title": "Noggin Missions",
+            "url": "894532961",
+            "keywords": ["interactive"],
+            "description": "Series of games developed for Paramount's educational platform, noggin, running on iOS and android. Implemented a global system that would adapt difficulty of content baed on performance across the platform, with custom tooling for production automations, including xAPI analytics event dispatching and data QA from around a million users."
+        },
+        {
+            "id": "nogginBooks",
+            "title": "Noggin Knows Books",
+            "url": "900982934",
+            "keywords": ["interactive"],
+            "description": "Series of interactive books developed for Paramount's educational platform, noggin, running on iOS and android.  Built automation tools for graphics and interactive pipelines, lead interactive production."
+        },
+        {
+            "id": "motion2020",
+            "title": "2020 3D / Motion",
+            "url": "518641210",
+            "keywords": ["motion"],
+            "description": "3D, motion, video work for fashion, beauty, design, and tech spaces."
+        },
+        {
+            "id": "blazePAV",
+            "title": "Blaze Play-Along-Video",
+            "url": "249119416",
+            "keywords": ["interactive"],
+            "description": "Highlights from Blaze and the Monster Machines interactive iOS apps <i>Five Alarm Blaze, Pickle Power, Mega Mud Robot, Knighty Knights,</i> and <i>The Wishing Wheel</i> for Nickelodeon.  Programmed gameplay in Unity."
+        },
+        {
+            "id": "kernel-imageAR",
+            "title": "Kernel-Image Card AR",
+            "url": "250153640",
+            "keywords": ["interactive", "motion"],
+            "description": "AR business card activation for Android using Maya, Unity, and Vuforia."
+        },
+        {
+            "id": "motion2014",
+            "title": "2014 3D / Motion",
+            "url": "79653971",
+            "keywords": ["motion"],
+            "description": "Highlights from older animation / rendering / compositing projects."
+        },
+        {
+            "id": "midas",
+            "title": "Midas VR",
+            "url": "189245888",
+            "keywords": ["interactive"],
+            "description": "VR experience inspired by the mythical king with the touch of gold. Made with Maya and Unity, using Leap Motion for hand tracking."
+        },
+        {
+            "id": "lilclub",
+            "title": "Lil Club VR",
+            "url": "262905038",
+            "keywords": ["interactive"],
+            "description": "Gaze-based navigation VR prototype made in Unreal Engine. Architectural design by <a href='https://www.instagram.com/safwat_riad/' target='_blank'>Safwat Riad</a>"
+        },
+        {
+            "id": "totcop",
+            "title": "Tot Cop Play-Along Video",
+            "url": "304208404",
+            "keywords": ["interactive"],
+            "description": "Highlights from Nick Jr's interactive video series for mobile devices.  Developed with Unity."
+        }
+        
+    ]
+}
