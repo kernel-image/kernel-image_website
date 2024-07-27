@@ -4,6 +4,13 @@
 .DS_Store
 Thumbs.db
 
+# Temp
+/tmp/
+/temp/
+
+# Backup
+*.bak
+
 # Media
 *.3gp
 *.7z
@@ -37,6 +44,7 @@ Thumbs.db
 *.oga
 *.ogg
 *.ogv
+*.otf
 *.pdf
 *.png
 *.ppt
