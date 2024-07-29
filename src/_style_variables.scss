@@ -1,0 +1,29 @@
+
+/*logo layout*/
+$logoSize: 10em;
+$subheadingSize: 4em;
+//font
+$defaultFont: 'KI_font', sans-serif;
+/*bg layout*/
+$bgBoxAmt: 30;
+$bgItemHeight : 500;
+$bgItemXOffset: 2;
+$bgItemYOffset: 0;
+$bgItemSlope: -0.8;
+/*colors*/
+$primaryColor: white;
+$secondaryColor: pink;
+$textColor: black;
+$linkColor: darkslategrey;
+/*video scale*/
+$videoHeightSmall: 40vmin;
+$videoHeightMedium: 38vmin;
+$videoHeightLarge: 38vmin;
+
+
+@mixin itemBaseStyle {
+    position:absolute;
+    width: 40vw;
+    height: $bgItemHeight+px;
+    transform: skewY(-15deg);
+}

@@ -1,0 +1,446 @@
+@import "style_variables";
+
+@font-face {
+    font-family: 'KI_font';
+    src: url('../assets/font/KI_font.woff2') format('woff2'),
+        url('../assets/font/KI_font.woff') format('woff'),
+        url('../assets/font/KI_font.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html, body{
+    overflow: hidden;
+}
+
+body{
+    background-color: $secondaryColor;
+}
+
+.bodywrapper {
+    background: linear-gradient(to bottom, $primaryColor, $secondaryColor);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    overflow:hidden;
+    min-height: 100vh;
+    max-width: 100vw;
+    padding: 1em;
+    position: fixed;
+}
+
+
+/*
+    Header
+*/
+
+.logo {
+    display: flex;
+
+    .icon {
+        background-image: url("../assets/svg/kernel-image_logo.svg");
+        background-repeat: no-repeat;
+        background-size: $logoSize $logoSize;
+        background-position: center;
+        height: $logoSize;
+        width: $logoSize;
+    }
+
+    .type {
+        font-size: $logoSize * 0.4;
+        font-family: $defaultFont;
+        font-weight: bolder;
+        text-wrap-mode: nowrap;
+    }
+
+    .wrapper{
+        justify-content: left;
+        align-items: center;
+        padding: 0 10px 0 10px;
+    }
+
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: bottom;
+    width: 100vw;
+    top: -$logoSize*2;
+
+    .nav-group{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: .5em;
+        margin-bottom: .5em;
+
+        &.filter {
+            margin-left: $subheadingSize;
+        }
+
+        &.sequence {
+            margin-right: $subheadingSize;
+            transform: translate(0, -100%) rotate(30deg);
+        }
+    }
+    button {
+        font-size: 1.5em;
+        color: $linkColor;
+        padding: .5em 0.5em 0.5em 0.5em;
+        margin: 0 0.5em 0 0.5em;
+        background-color: transparent;
+        transform: skewX(-10deg);
+        border: 4px;
+        border-style: double;
+        border-color: $secondaryColor;
+
+        h2{
+            display: inline;
+            font-family: $defaultFont;
+        }
+
+        &.active {
+            transform: skewX(-10deg);
+            border-color: $linkColor;
+            border-style: solid;
+        }
+        @media (hover: hover) {
+            &:hover {
+                background-color: $secondaryColor;
+                font-style: oblique;
+            }
+        }
+    }
+}
+
+/*
+    Content Styles
+*/
+
+.content {
+
+    .wrapper {
+        transform: rotate(3deg);
+        width: calc(($videoHeightSmall * 16 / 9));
+        margin: 5em 5em 5em 5em;
+    }
+
+    .image {
+        height: $videoHeightSmall;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .type {
+        text-align: left;
+        background-color: $secondaryColor;
+        padding-right: 0.5em;
+
+        .title {
+            font-size: 1.2em;
+            font-style: italic;
+            font-family: $defaultFont;
+            font-weight: bolder;
+            color: $textColor;
+            display: inline;
+            width: 100%;
+        }
+    
+        .description {
+            font-size: 1em;
+            font-family: sans-serif;
+            //font-weight: 600;
+            color: $linkColor;
+            max-width: calc(($videoHeightSmall * 16 / 9));
+            width: 100%;
+
+            a {
+                color: $linkColor;
+                text-decoration: wavy underline;
+                &:hover{
+                    background-color: $primaryColor;
+                }
+            }
+        }
+    }
+
+}
+
+/*
+    Sitemap
+*/
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    //width: auto;
+    //table-layout: fixed;
+    margin: 2em;
+    td, th {
+        text-align: left;
+        padding: 8px;
+        width:6.6em;
+    }
+    td{
+        a{
+            color: $linkColor;
+            text-decoration: wavy underline;
+            &:hover{
+                background-color: $secondaryColor;
+            }
+        }
+        font-family: $defaultFont;
+    }
+    th {
+        font-family: sans-serif;
+        font-weight: bolder;
+        border: 1px solid $secondaryColor;
+    }
+    thead {
+        display: block;
+    }
+    tbody {
+        display: block;
+        max-height: 60vh;
+        overflow: auto;
+    }
+}
+
+
+/*
+    Footer
+*/
+
+footer {
+    font-family: $defaultFont;
+    position: fixed;
+    bottom: 0;
+    left: -1vw;
+    display: flex;
+    justify-content: left;
+    padding: 32px 64px 32px 64px;
+    background-color: $secondaryColor;
+    color: $linkColor;
+    width: 69vw;
+    transform: skewX(10deg);
+    a {
+        color: $linkColor;
+        margin-left: 2em;
+        text-decoration: none;
+        @media (hover: hover) {
+            &:hover {
+                background-color: $primaryColor;
+            }
+        }
+    }
+
+    .decorated {
+        text-decoration: wavy underline;
+    }
+}
+
+/*
+    BG Styles
+*/
+
+.item {
+    @include itemBaseStyle;
+}
+
+@for $i from 1 through $bgBoxAmt {
+    .level#{$i} {
+        background-color: darken($primaryColor, percentage(calc(($i - 1)/$bgBoxAmt)));
+        top: calc($bgItemYOffset - ($i * $bgItemHeight/($bgBoxAmt * $bgItemSlope)))+px;
+        left: calc($bgItemXOffset + (calc($i * $bgItemXOffset)))+vw;       
+        z-index: -1 - $i;
+    }
+}
+
+
+
+/*
+    Media Queries
+*/
+
+@media (max-height: 960px) or (max-width: 900px) {
+    .logo{
+        .icon{
+            background-size: 5em 5em;
+            height: 5em;
+            width: 5em;
+        }
+        .type{
+            font-size: 2em;
+        }
+    }
+
+    nav{
+        button{
+            font-size: .75em;
+        }
+
+        .nav-group{
+            margin-top: 0;
+            margin-bottom: 0;
+            &.sequence {
+                transform: translate(0, -100%) rotate(40deg);
+            }
+        }
+        
+        
+    }
+    .content{
+        .wrapper{
+            margin: 1.5em 1em 1em 2em;
+        }
+    }
+
+    td, th {
+        font-size: .666em;
+    }
+
+    footer {
+        font-size: .75em;
+    }
+}
+
+@media (max-height: 960px) {
+    
+
+    .content{
+
+        .type{
+            .title{
+                font-size: 0.85em;
+            }
+            .description{
+                font-size: 0.75em;
+            }
+        }
+    }
+
+    footer {
+        padding: 2px 2px 8px 0px;
+    }
+}
+
+
+@media (max-height: 512px) or (max-width: 512px) {
+    .logo{
+        .icon{
+            background-size: 4em 4em;
+            height: 4em;
+            width: 4em;
+        }
+        .type{
+            font-size: 1.6em;
+        }
+    }
+
+    nav{
+        button{
+            font-size: .7em;
+        }
+
+        .nav-group{
+            &.sequence {
+                transform: translate(0, -100%) rotate(55deg);
+            }
+        }
+        
+        
+    }
+    .content{
+        .wrapper{
+            margin: 1.5em 1em 1em 0.5em;
+        }
+    }
+
+    td, th {
+        font-size: .5em;
+    }
+
+    footer{
+        width: 90vw;
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 1/1) and ((max-height: 512px) or (max-width: 512px)){
+    //portrait
+    .supplimental{
+        display: none;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 1/1) and (max-width: 390px){
+    //portrait
+    nav {
+        .nav-group{
+            &.sequence {
+                transform: translate(-20%, -100%) rotate(70deg);
+            }
+        }
+    }
+}
+
+@media only screen and (min-aspect-ratio: 1/1) and (max-height: 512px){
+    //landscape
+    .content{
+        .wrapper{
+            transform:  translate(20em, -7em);
+        }
+    }
+
+    .sitemap{
+        transform:  translate(20em, -7em);
+    }
+}
+
+@media only screen and (min-aspect-ratio: 1/1) and (max-height: 512px) and (max-width: 800px){
+    nav {
+        .nav-group{
+            &.sequence {
+                margin-right: 1.5em;
+            }
+        }
+    }
+}
+
+@media only screen and (min-aspect-ratio: 1/1) and (max-height: 512px) and (max-width: 720px){
+    nav {
+        .nav-group{
+            &.sequence {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (min-aspect-ratio: 1/1) and (max-height: 390px) {
+    //landscape
+    .content {
+        .type {
+            .description {
+                font-size: .6em;
+            }
+        }
+    }
+}
+
+@media (max-height: 310px) {
+
+    .content{
+        .type{
+            display:none;
+        }
+    }
+}
+
+
