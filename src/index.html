@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" lang="en"/>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0", max-scale="1.0", user-scalable="0">
+    <title>kernel-image</title>
+    <link rel="icon" href="../assets/icon/favicon.ico" sizes="any">
+    <link rel="icon" href="../assets/svg/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  </head>
+  <body>
+    <div class="bodywrapper">
+      <div class="logo wrapper header">
+        <div class="logo icon"></div>
+        <h1 class="logo type">kernel-image</h1>
+      </div>
+      <nav>
+        <div class="nav-group filter">
+          <button class="nav interactive" alt="interactive" onclick="lib.interactive()"><h2 class="nav type" >interactive</h2></button>
+          <button class="nav motion" alt="motion" onclick="lib.motion()"><h2 class="nav type">motion</h2></button>
+        </div>
+        <div class="nav-group sequence">
+          <button class="nav prev" alt="previous" onclick="lib.prev()"><h2 class="nav type"><</h2></button>
+          <button class="nav next" alt="next" onclick="lib.next()"><h2 class="nav type">></h2></button>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="sitemap"></div>
+        <div class="content wrapper">
+          <div class="content image">
+            <iframe src="https://player.vimeo.com/video/182824999?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+          <div class="content type">
+            <h3 class="content title">eureka!</h3>
+            <div class="content description">You've discovered kernel-image, provider of interactive, motion, and 3D graphics services</div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <a href="javascript:undefined" onclick="lib.prev()"><</a>
+        <a href="javascript:undefined" onclick="lib.next()">></a>
+        <a href="javascript:undefined" onclick="lib.sitemap()">sitemap</a>
+        <a href="mailto:info@kernel-image.net" class="decorated">info@kernel-image.net</a>
+        <a href ="https://github.com/kernel-image" class="decorated supplimental">github</a>
+      </footer>
+    </div>
+  </body>
+</html>
