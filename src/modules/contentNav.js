@@ -22,7 +22,6 @@ const contentNav = (function () {
     const resetRender =  async (fetchFunction) => {
         await resetFilter(fetchFunction);
         if (contentRecords.length > 0) {
-            logger.log(contentRecords);
             updateIFrameGlobal();
         }
         else {
@@ -31,7 +30,6 @@ const contentNav = (function () {
     };
 
     const resetFilter = async (fetchFunction) => {
-        logger.log(fetchFunction);
         currentIdx = 0;
         contentRecords = await fetchFunction() ?? [];
     }
@@ -126,7 +124,6 @@ const contentNav = (function () {
 
     const initSitemap = async () => {
         const table = await dataMan.getSitemap();
-        logger.log(table);
         return table;
     }
 

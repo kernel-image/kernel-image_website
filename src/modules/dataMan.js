@@ -1,4 +1,3 @@
-import { logger } from "./logger";
 
 const dataMan = (function () {
 
@@ -42,11 +41,8 @@ const dataMan = (function () {
     };
 
     const getSitemap = async () => {
-        logger.log("getSitemap");
         const allRecords = await getAllContentRecords();
-        logger.log(allRecords);
         const keywords = [...new Set(allRecords.map(d => d.keywords).flatMap(d => d).sort())];
-        logger.log(keywords);
         let table = '<table><thead><tr><th>Name</th>' + keywords.map(k => `<th>${k}</th>`).join('') + '</tr></thead><tbody>';
         allRecords.forEach( r => {
             let row = `<tr><td><a onclick="lib.loadContent('${r.id}')">${r.title}</a></td>`;
