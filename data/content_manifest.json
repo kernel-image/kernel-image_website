@@ -12,7 +12,7 @@
             "title": "Noggins ABCs",
             "url": "896279403",
             "keywords": ["interactive"],
-            "description": "Series of literacy games developed for Paramount's educational platform, noggin, running on iOS and android. Implemented a global system that would adapt difficulty of content baed on performance across the platform, with custom tooling for production automations, including xAPI analytics event dispatching and data QA from around a million users. Lead interactive production from concepting through regression testing. "
+            "description": "Series of literacy games developed for Paramount's educational platform, noggin, running on iOS and android. Implemented a global system that would adapt difficulty of content based on performance across the platform, with custom tooling for production automations, including xAPI analytics event dispatching and data QA from around a million users. Lead interactive production from concepting through regression testing. "
 
         },
         {
@@ -20,7 +20,7 @@
             "title": "Noggins 123s",
             "url": "898152161",
             "keywords": ["interactive"],
-            "description": "Series of math games developed for Paramount's educational platform, noggin, running on iOS and android. Implemented a global system that would adapt difficulty of content baed on performance across the platform, with custom tooling for production automations, including xAPI analytics event dispatching and data QA from around a million users. Lead interactive production from concepting through regression testing."
+            "description": "Series of math games developed for Paramount's educational platform, noggin, running on iOS and android. Implemented a global system that would adapt difficulty of content based on performance across the platform, with custom tooling for production automations, including xAPI analytics event dispatching and data QA from around a million users. Lead interactive production from concepting through regression testing."
         },
         {
             "id": "pie2020",
@@ -34,7 +34,7 @@
             "title": "Noggin Missions",
             "url": "894532961",
             "keywords": ["interactive"],
-            "description": "Series of games developed for Paramount's educational platform, noggin, running on iOS and android. Implemented a global system that would adapt difficulty of content baed on performance across the platform, with custom tooling for production automations, including xAPI analytics event dispatching and data QA from around a million users."
+            "description": "Series of games developed for Paramount's educational platform, noggin, running on iOS and android. Implemented a global system that would adapt difficulty of content based on performance across the platform, with custom tooling for production automations, including xAPI analytics event dispatching and data QA from around a million users."
         },
         {
             "id": "nogginBooks",
