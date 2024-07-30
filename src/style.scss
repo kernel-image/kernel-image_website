@@ -140,7 +140,8 @@ nav {
     .type {
         text-align: left;
         background-color: $secondaryColor;
-        padding-right: 0.5em;
+        padding-bottom: 0.25em;
+        padding-right: 0.25em;
 
         .title {
             font-size: 1.2em;
@@ -155,7 +156,6 @@ nav {
         .description {
             font-size: 1em;
             font-family: sans-serif;
-            //font-weight: 600;
             color: $linkColor;
             max-width: calc(($videoHeightSmall * 16 / 9));
             width: 100%;
@@ -179,8 +179,6 @@ nav {
 table{
     border-collapse: collapse;
     border-spacing: 0;
-    //width: auto;
-    //table-layout: fixed;
     margin: 2em;
     td, th {
         text-align: left;
@@ -372,15 +370,15 @@ footer {
     }
 }
 
+//portrait
+
 @media only screen and (max-aspect-ratio: 1/1) and ((max-height: 512px) or (max-width: 512px)){
-    //portrait
     .supplimental{
         display: none;
     }
 }
 
 @media only screen and (max-aspect-ratio: 1/1) and (max-width: 390px){
-    //portrait
     nav {
         .nav-group{
             &.sequence {
@@ -390,8 +388,9 @@ footer {
     }
 }
 
+//landscape
+
 @media only screen and (min-aspect-ratio: 1/1) and (max-height: 512px){
-    //landscape
     .content{
         .wrapper{
             transform:  translate(20em, -7em);
@@ -402,6 +401,7 @@ footer {
         transform:  translate(20em, -7em);
     }
 }
+
 
 @media only screen and (min-aspect-ratio: 1/1) and (max-height: 512px) and (max-width: 800px){
     nav {
@@ -424,7 +424,6 @@ footer {
 }
 
 @media only screen and (min-aspect-ratio: 1/1) and (max-height: 390px) {
-    //landscape
     .content {
         .type {
             .description {
