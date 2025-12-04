@@ -8,6 +8,14 @@
             "description": "You have discovered kernel-image, a provider of experience-stimulating content and interactivity. Similar to the hidden component of a computer operating system, kernel-image works behind the scenes to mediate the flow of information between virtual desires and physical hardware. Feel free to look at the reel above or peruse other projects samples on the site."
         },
         {
+            "id": "harlo",
+            "title": "Harlo",
+            "url": "1143244307",
+            "keywords": ["interactive"],
+            "description": "Web/Mobile app to help users discover streaming movies and shows that align with their taste, leveraging agentic AI and social content.  Flutter client, Firebase backend (Auth, Firestore, GA4, Gemini / VertexAI, RAG Enginge, TypeScript cloud functions, Langchain).  <a href='https://harlo.ai/createaccount' target='_blank'>Try it for yourself!</a>"
+
+        },
+        {
             "id": "nogginsABC",
             "title": "Noggins ABCs",
             "url": "896279403",
