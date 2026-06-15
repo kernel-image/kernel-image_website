@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run clear && webpack",
     "build-prod": "npm run clear && webpack --config=webpack.config.prod.js --stats-error-details --stats-children",
-    "http-server": "cd dist && python3 -m http.server",
+    "http-server": "npx http-server ./dist",
     "serve": "npm run build && npm run http-server",
-    "run": "npm run serve && firefox localhost:8000",
+    "run": "npm run serve && firefox localhost:8080",
     "clear": "rm -rf ./dist && mkdir ./dist"
   },
   "keywords": [],
