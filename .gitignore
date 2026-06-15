@@ -26,7 +26,7 @@ Thumbs.db
 *.docx
 *.eps
 *.gif
-*.ico
+# *.ico
 *.jpeg
 *.jpg
 *.m4a
@@ -55,12 +55,12 @@ Thumbs.db
 *.tar
 *.tif
 *.tiff
-*.ttf
+# *.ttf
 *.txt
 *.wav
 *.webm
-*.woff
-*.woff2
+# *.woff
+# *.woff2
 *.xls
 *.xlsx
 *.xml
